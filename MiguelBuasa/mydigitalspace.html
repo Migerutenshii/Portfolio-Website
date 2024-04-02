@@ -53,7 +53,7 @@
       <div class="home-content">
         <h3>Hello, It's Me</h3>
         <h1>Miguel Angel Buasa</h1>
-        <h3>And I'm a <span>Frontend Developer</span></h3>
+        <h3>And I'm a <span class="multiple-text"></span></h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, molestias nesciunt rerum tempora similique culpa animi soluta optio natus ea, cum nihil neque ut amet, explicabo cupiditate quae? Pariatur, laudantium!</p>
         <div class="socialmedia">
           <a href="https://www.facebook.com/profile.php?id=100077555831925"><i class='bx bxl-facebook' ></i></a>
@@ -66,6 +66,7 @@
     
       <div class="home-img" style="padding: 50px 50px; position: relative;" >
         <img src="imgs/my-profile-pict..png">
+      </div>
 
     </section>
 
@@ -173,23 +174,25 @@
     </section>
 
     <!--Contact section design-->
-    <section class="contact" id="contact">
-      <h2 class="heading">Contact <span>Me</span></h2>
+<section class="contact" id="contact">
+  <h2 class="heading">Contact <span>Me</span></h2>
 
-      <form action="#">
-        <div class="input-box">
-          <input type="text " placeholder="Full Name">
-          <input type="email" placeholder="Email Address">
-        </div>
-        <div class="input-box">
-          <input type="number" placeholder="Mobile Number">
-          <input type="text " placeholder="Subject">
-        </div>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-        <input type="submit" value="Send Message" class="btn">
-        </div>
-      </form>
-    </section>
+  <form action="https://api.web3forms.com/submit" method="POST">
+    <div class="contact-form">
+      <input type="hidden" name="access_key" value="fe803603-7ed2-4882-bb64-9de496d50081">
+      <div class="input-box">
+        <input type="text" name="full_name" placeholder="Full Name">
+        <input type="email" name="email_address" placeholder="Email Address">
+      </div>
+      <div class="input-box">
+        <input type="tel" name="mobile_number" placeholder="Mobile Number">
+        <input type="text" name="subject" placeholder="Subject">
+      </div>
+      <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+      <input type="submit" name="submit" value="Send Message" class="btn">
+    </div>
+  </form>
+</section>
 
     <!--Footer design-->
 
@@ -203,6 +206,16 @@
       </div>
     </footer>
 </div>
-</body>
+
+<!--Scroll reveal-->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!--typed js-->
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<!--Custom js-->
 <script src="script.js"></script>
+
+</body>
+
 </html>
