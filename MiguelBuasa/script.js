@@ -50,12 +50,22 @@ ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 /*================typed js===================== */
-const type = new Typed('.multiple-text', {
-    Strings: ['Frontend Developer', 'E-commerce product specialist', 'Social Media Manager'],
+var typed = new Typed('.multiple-text', {
+    strings: ['E-commerce Specialist', 'Social Media Manager', 'Frontend Developer'],
+    smartBackspace: true,
+    delay: 1000,
     typeSpeed: 100,
     backSpeed: 100,
-    backDelay: 1000,
-    loop: true
-});
+    loop: true // Default value
+  });
 
+  var typed = new Typed('.job-description', {
+    strings: ['Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam a esse in vitae facere quo inventore repellat dolorem? Impedit sed quis voluptates nesciunt neque, nulla ab atque voluptate necessitatibus perferendis?'],
+    smartBackspace: true,
+    typeSpeed: 20,
+    backSpeed: 20,
+    loop: false // Default value
+  });
+
+  
 
